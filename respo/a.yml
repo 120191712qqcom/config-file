@@ -1,0 +1,22 @@
+# application name
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/xxyclass/scdemoconf.git
+          username: 120191712@qq.com
+          password: ziqiang23
+          searchPaths: '{profile}'
+
+# server monitor port
+server:
+  port: 8181
+
+# eureka server cluster
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
